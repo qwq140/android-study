@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ItemAdapter extends BaseAdapter {
+public class MovieAdapter extends BaseAdapter {
 
     private static final String TAG = "ItemAdapter";
     private final List<Movie> movies;
 
-    public ItemAdapter(List<Movie> movies) {
+    public MovieAdapter(List<Movie> movies) {
         this.movies = movies;
     } // 10개 짜리
 
@@ -30,11 +30,13 @@ public class ItemAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    // 전체크기를 확인하기 위해서 필요 (나도, 어댑터도)
     @Override
     public int getCount() {
         return movies.size();
     }
 
+    // 클릭하거나 어떤 이벤트 발생시에 컬렉션 정보를 확인하기 위해 필요
     @Override
     public Object getItem(int position) {
         return movies.get(position);
@@ -50,19 +52,13 @@ public class ItemAdapter extends BaseAdapter {
         MainActivity mainActivityContext = (MainActivity)parent.getContext();
         LayoutInflater inflater = (LayoutInflater)mainActivityContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View view = inflater.inflate(R.layout.list_item,parent,false);
+        View view = inflater.inflate(R.layout.movie_item,parent,false);
         TextView tvTitle = view.findViewById(R.id.tv_title);
         ImageView tvPic = view.findViewById(R.id.tv_pic);
-
 
         tvTitle.setText(movies.get(position).getTitle());
         tvPic.setImageResource(movies.get(position).getPic());
 
-        view.setOnClickListener(v -> {
-            Intent intent = new Intent(mainActivityContext,DetailActivity.class);
-            intent.putExtra("movie",movies.get(position));
-            mainActivityContext.startActivity(intent);
-        });
 
         return view;
     }
