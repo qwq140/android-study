@@ -31,7 +31,7 @@ public class UserFragment extends Fragment {
         vpContainer = view.findViewById(R.id.vp_container);
         tabs = view.findViewById(R.id.tabs);
 
-        userFragmentPagerAdapter = new UserFragmentPagerAdapter(getFragmentManager(),1);
+        userFragmentPagerAdapter = new UserFragmentPagerAdapter(getChildFragmentManager(),1);
 
         userFragmentPagerAdapter.addFragment(new Frag1());
         userFragmentPagerAdapter.addFragment(new Frag2());
