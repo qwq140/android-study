@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "882273427747",
+    "project_id": "firestoreapp-a62c9",
+    "storage_bucket": "firestoreapp-a62c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882273427747:android:a6efaef8d7ab4f1e60ac96",
+        "android_client_info": {
+          "package_name": "com.cos.firestroeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882273427747-eno50u5hpt904l4ekakj3nkmm2ec4tl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cos.firestroeapp",
+            "certificate_hash": "97ea4b9adc063b68146269e3332a5cc4332a2a31"
+          }
+        },
+        {
+          "client_id": "882273427747-df1771epb6eup5gkaehcb8otaavt59lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFHSWPD4RB_0xc0Hf7euhRYcA9sjj2Ge8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882273427747-df1771epb6eup5gkaehcb8otaavt59lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
